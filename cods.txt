@@ -1,0 +1,113 @@
+Ирина@LAPTOP-FEMECLJE MINGW64 ~
+$ cd d:
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d
+$ mkdir Olesyagit
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d
+$ cd Olesyagit/
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit
+$ touch 1test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit
+$ git init
+Initialized empty Git repository in D:/Olesyagit/.git/
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ git add .
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ nano 1test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ git commit -m "Hw! 1"
+[master (root-commit) c1c051c] Hw! 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ touch 2test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ git add .
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ touch 3test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ git add .
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ git branch Roman1
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ git switch Roman1
+Switched to branch 'Roman1'
+A       2test.txt
+A       3test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1)
+$ nano 1test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1)
+$ git branch Ilya2
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1)
+$ git switch Ilya2
+Switched to branch 'Ilya2'
+M       1test.txt
+A       2test.txt
+A       3test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Ilya2)
+$ nano 2test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Ilya2)
+$ git branch Olesya3
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Ilya2)
+$ git switch Olesya3
+Switched to branch 'Olesya3'
+M       1test.txt
+A       2test.txt
+A       3test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Olesya3)
+$ nano 3test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (master)
+$ git switch Roman1
+Switched to branch 'Roman1'
+M       1test.txt
+A       2test.txt
+A       3test.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1)
+$ git merge Ilya2
+Already up to date.
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1)
+$ git branch -m Roman1andIlya2
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1andIlya2)
+$ touch logs.txt
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1andIlya2)
+$ git log
+commit c1c051c4c7ed86669b5e6fcfca5047c650b9e85d (HEAD -> Roman1andIlya2, master, Olesya3, Ilya2)
+Author: unknown <почта>
+Date:   Wed Feb 1 20:33:28 2023 +0900
+
+    Hw! 1
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1andIlya2)
+$ git merge Olesya3
+Already up to date.
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1andIlya2)
+$ git branch -m Roman1andIlya2andOlesya3
+
+Ирина@LAPTOP-FEMECLJE MINGW64 /d/Olesyagit (Roman1andIlya2andOlesya3)
+$ nano logs.txt
+
